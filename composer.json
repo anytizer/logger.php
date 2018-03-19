@@ -1,0 +1,7 @@
+{
+    "name": "anytizer/logger.php",
+    "description": "Various purpose PHP Logger",
+    "type": "library",
+    "license": "MIT",
+    "require": {}
+}
