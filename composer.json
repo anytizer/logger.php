@@ -3,5 +3,9 @@
     "description": "Various purpose PHP Logger",
     "type": "library",
     "license": "MIT",
-    "require": {}
+	"autoload": {
+		"psr-4": {
+			"logger\\": "../src/logger"
+		}
+	}
 }

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "anytizer/logger.php": "dev-master"
+    }
+}
