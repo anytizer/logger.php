@@ -3,7 +3,14 @@ namespace logger;
 
 class HeaderLogger
 {
+	/**
+	 * Where to save the log file
+	 */
 	private $path;
+	
+	/**
+	 * Only headers to log
+	 */
 	private $keys = array(
 		"time"   => "REQUEST_TIME",
 		"ip"     => "REMOTE_ADDR",
@@ -32,6 +39,9 @@ class HeaderLogger
 		return $bytes;
 	}
 	
+	/**
+	 * Log filename handler
+	 */
 	private function filename()
 	{
 		$filename = $this->path;
@@ -52,7 +62,7 @@ class HeaderLogger
 		return $_SERVER[$key];
 	}
 	
-	private function values($key="")
+	private function values($key=""): string
 	{
 		return $_SERVER[$key]??"";
 	}
